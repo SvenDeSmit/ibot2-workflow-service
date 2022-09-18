@@ -14,16 +14,10 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class WorkflowDemand implements Serializable {
+public class RealEstateDemand implements Serializable {
 	
-	private String demandId;
-	private String dossierId;
-	private String clientDemandReference ; 
-	
-	
-	private List<RealEstateDemand> realEstateDemandList;
+	private RealEstate realEstate;
 
-	private List<InfoSourceDemand> infoSourceDemandList;
-	
+	private List<InfoSource> infoSourceList;
 
 }
